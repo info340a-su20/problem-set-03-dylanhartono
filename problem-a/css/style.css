@@ -1,4 +1,77 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  height: inherit;
 }
+
+main {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container > section {
+  padding: 1em;
+}
+
+.left-col {
+  flex-basis: 240px;
+}
+
+.main-col {
+  display: flex;
+  flex: 1;
+  background-color: #eee;
+}
+
+.right-col {
+  flex-basis: 180px;
+  flex-shrink: 0;
+}
+
+.card-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 0 250px;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: .5rem;
+  border-radius: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: 01px 3px rgba(0, 0, 0, 0.16), 01px 3px rgba(0, 0, 0, 0.23);
+}
+
+.card > img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card > p {
+  padding: .5rem 1rem;
+}
+
+
+.page-container {
+  display: flex;
+}
+
+.page-container > main {
+  flex-grow: 1;
+}
+
+
